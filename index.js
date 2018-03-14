@@ -42,7 +42,12 @@ function viewCart() {
       name = Object.keys(theCart[i]);
       price = Object.values(theCart[i]);
       
+      if (theCart.length === 2) {
+        punctuation = "and";
+      } else {
+      
       (i === theCart.length - 1) ? punctuation = ", and" : punctuation = ",";
+      }
       
       if (i === 0 ) {
         string = `${string} ${name} at $${price}`;
