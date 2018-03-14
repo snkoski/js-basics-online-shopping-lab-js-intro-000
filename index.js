@@ -89,5 +89,16 @@ console.log("End remove");
 function placeOrder(cardNumber) {
   // write your code here
   var place = cardNumber;
+  
+  if(place === undefined) {
+    console.log("Sorry, we don't have a credit card on file for you.");
+    return;
+  }
+  
+  console.log(`Your total cost is $${total()}, which will be charged to the card ${place}.`);
+  
+  cart = [];
+  
   console.log("place order");
 }
+placeOrder(123);
