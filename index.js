@@ -43,7 +43,7 @@ function viewCart() {
       price = Object.values(theCart[i]);
       
       if (theCart.length === 2) {
-        punctuation = "and";
+        punctuation = " and";
       } else {
       
       (i === theCart.length - 1) ? punctuation = ", and" : punctuation = ",";
